@@ -1,0 +1,105 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    height: 100%;
+}
+
+#game-board {
+    border: 0;
+    background-color: #232323;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#game-board > div {
+    position: absolute;
+}
+
+.cargo {
+    --size: 70px;
+    width: var(--size);
+    height: var(--size);    
+    border: 1px solid black;
+    background-color: cornflowerblue;
+}
+
+.cargo.hit {
+    border: 3px solid crimson;
+}
+
+.zerg {
+    --size: 40px;
+    width: var(--size);
+    height: var(--size);       
+    border-radius: var(--size);
+    border: 4px solid crimson;
+    cursor: crosshair;
+    z-index: 1;
+}
+
+.zerg.hit {
+    border: 5px solid red;
+    background-color: crimson;
+}
+
+
+/* ----------- SCOREBOARD ------------ */
+
+.scoreboard {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: darkslategray;
+    z-index: 2;
+    left: 45%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.scoreboard > div {
+    display: inline-flex;
+    margin: 5px;
+}
+.scoreboard > div:first-child {
+    border: 1px solid black;
+}
+
+.scoreboard .team {
+    margin: 10px;
+}
+
+.scoreboard .action {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    margin: 0 2px;    
+}
+
+#winner-message {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.winner-message {
+    z-index: 3;
+    font-size: 1em;
+    color: red;
+    transition: all 1s ease-in-out;
+    text-shadow: 3px 3px 7px red;
+}
+
+.winner-message.animation {
+    font-size: 5em;
+    color: gold;
+}

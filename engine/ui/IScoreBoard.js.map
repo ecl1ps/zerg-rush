@@ -1,0 +1,1 @@
+{"version":3,"file":"IScoreBoard.js","sourceRoot":"","sources":["../../../src/engine/ui/IScoreBoard.ts"],"names":[],"mappings":"","sourcesContent":["export interface IScoreBoard<T> {\r\n    adjustScore(team: T, adjustment: number): number;\r\n    clearScore(): void;\r\n}"]}

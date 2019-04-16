@@ -1,0 +1,9 @@
+export const ZERG_SIZE_MIN = 40;
+export const ZERG_SIZE_MAX = 40;
+export const ZERG_SPEED_MIN = 200;
+export const ZERG_SPEED_MAX = 300;
+export const CARGO_SIZE_MIN = 60;
+export const CARGO_SIZE_MAX = 80;
+export const CARGO_SPEED_MIN = 100;
+export const CARGO_SPEED_MAX = 200;
+//# sourceMappingURL=constants.js.map
